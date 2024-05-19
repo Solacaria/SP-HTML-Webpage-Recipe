@@ -1,0 +1,421 @@
+* {
+    box-sizing: content-box;
+}
+body {
+    /* background-image: linear-gradient( rgb(219, 226, 192), rgb(229, 235, 207), rgb(42, 146, 52) );  */
+    background-color: antiquewhite;
+    color: black;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+a:link, a:visited {
+    color:black;
+}
+a:hover {
+    color: rgb(59, 59, 59);
+}
+.main-header {
+    height: 5rem;
+    background-color: rgb(206, 91, 90);
+}
+
+.div-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+}
+
+.left-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 1rem;
+    border: 2px black double;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.left-header:hover {
+    background-color: rgb(224, 114, 112);
+    scale: 85%;
+}
+.author {
+    font-size: 18px;
+    padding-left: 15rem;
+    display: flex;
+    align-items: center;
+}
+.author-name {
+    padding-left: 0.2rem;
+}
+
+.page-title {
+    padding-left: 2rem;
+    margin-right: 1rem;
+} 
+.right-header {
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    padding-right: 1rem;
+}
+
+.header-right-links {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.header-pfp {
+    display: grid;
+    place-items: center;
+}
+
+.header-logout {
+    display: grid;
+    place-items: center;
+}
+
+.pfp-icon-link {
+    scale: 50%;
+    border: 5px solid black;
+    border-radius: 20px;
+    margin-bottom: -1rem;
+}
+.pfp-icon-link:hover {
+    scale: 66%;
+}
+.logout-icon-link {
+    scale: 50%;
+    border: 5px solid black;
+    border-radius: 20px;
+    margin-bottom: -1rem;
+}
+.logout-icon-link:hover {
+    scale: 66%;
+}
+
+#input-search {
+    border-radius: 6px;
+    scale: 125%;
+    margin-right: 2rem;
+}
+
+.main-img {
+    scale: 8%;
+    height: 1rem;
+    width: 1rem;
+   
+}
+
+.recipe-top-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(rgb(206, 91, 90), antiquewhite );
+    border-top: 1px black solid;
+
+}
+.recipe-info {
+    display: grid;
+    place-items: center;
+    margin-left: 25rem;
+    font-size: 1.5rem;
+}
+
+.recipe-tags {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    order: -1;
+    padding-left: 3rem;
+}
+.recipe-tags p {
+    border:1px black solid;
+    border-radius: 5px;
+    padding: 0.5rem;
+    background-color: rgba(224, 222, 181, 0.774);
+   
+}
+.recipe-stats {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    place-items: center;
+    scale: 85%;
+    justify-content:center;
+    margin-left: 1rem;
+    gap: 3rem;
+}
+.extra-info {
+    display: grid;
+    place-items: center;
+    justify-content: space-evenly;
+}
+.portion-size {
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.timing {
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.difficulty {
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.calories {
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.extra-info img {
+    height: 2rem;
+    width: 2rem;
+}
+.extra-info p {
+    font-weight: 700;
+}
+.rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px black solid;
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+.rating img {
+    scale: 75%;
+}
+.rating img:hover {
+    scale: 100%
+}
+.comments {
+    scale: 125%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    margin-left: 1rem;
+}
+.comments img {
+    scale: 75%;
+    margin-right: 1rem;
+}
+.comments img:hover {
+    scale: 100%;
+}
+.share {
+    scale: 125%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1.5rem;
+}
+.share img {
+    scale: 33%;
+    margin-left: -1rem;
+}
+.share img:hover {
+    scale: 50%;
+}
+
+.recipe-photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+.recipe-photo img {
+    max-width: 770px;
+    max-height: 654px;
+}
+.recipe-todo {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: top;
+    font-size: 24px;
+    padding-bottom: 1rem;
+}
+.recipe-how-to {
+    display: grid;
+    place-items: center;
+    border-left: 2px solid black;
+    border: 2px dashed rgb(0, 0, 0);
+    padding-right: 2rem;
+    
+}
+.recipe-how-to h2 {
+    margin-top: -15rem;
+}
+.recipe-how-to ul {
+    margin-top: -25rem;
+    list-style-type: none;
+}
+.recipe-how-to ul li {
+    display: grid;
+    place-items: center;
+    margin: -1rem;
+}
+.recipe-how-to ul li p {
+    font-style: italic;
+    font-size: 18px;
+}
+#final-list-to-do {
+    padding-bottom: 2rem;
+}
+.recipe-ingredients ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+.recipe-ingredients ul li {
+    padding-right: 2rem;
+    padding-bottom: 0.5rem;
+}
+.recipe-ingredients {
+    padding-bottom: 20rem;
+    display: grid;
+    place-items: center;
+    border: 2px dashed rgb(0, 0, 0);
+}
+.recipe-serving {
+    margin-left: 9rem;
+}
+.beverage {
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    margin-bottom: -15rem;
+}
+.wine-bottle {
+    height: 25rem;
+    width: 25rem;
+}
+.title-img {
+    scale: 5%;
+    height: 1rem;
+    width: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.section-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradientrgb((87, 160, 71),rgb(42, 146, 52));
+    border-top: 2px black solid;
+    padding: 0 3rem;
+}
+.footer-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 1rem;
+    border: 2px black double;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    scale: 125%;
+    background-color: rgb(206, 91, 90);
+}
+.main-footer{
+    background-color: rgb(206, 91, 90);
+}
+
+.footer-info:hover {
+    background-color: rgb(224, 114, 112);
+    scale: 115%;
+}
+
+.footer-contact {
+    display: grid;
+    place-items: center;
+    margin: 1rem;
+    padding: 0.5rem;
+    border: 2px black double;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+@media screen and (max-width: 1000px) {
+    .main-header {
+        position:fixed;
+        top: 0;
+        width:100%;
+        z-index: 1000;
+    }
+
+    .recipe-top-info {
+        display:grid;
+        justify-content: center;
+        place-items: center;
+    }
+    .recipe-info {
+        margin-top: 5rem;
+        margin-left: 2rem;
+        margin-bottom: 2rem;
+    }
+    .recipe-tags {
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 1rem;
+        order: -1;
+        padding-left: 3rem;
+        order: 0;
+    }
+    .recipe-todo {
+        display: grid;
+        gap: 2rem;
+        margin: 0rem 2rem;
+    }
+    .recipe-how-to {
+        border-left: none;
+        border-top: none;
+        border: 2px dashed rgb(211, 241, 227);
+        padding-bottom: 3rem;
+        margin-bottom: 1rem;
+    }
+    #final-list-to-do {
+        padding-left: 3rem;
+    }
+    .recipe-ingredients {
+        margin-top: 1rem;
+        padding-bottom: 5rem;
+    }
+    .author {
+        padding: 0px;
+        display: grid;
+        place-items: center;
+    }
+    .author-name {
+        padding-bottom: 1rem;
+    }
+    #input-search {
+        scale: 100%;
+    }
+    .header-right-links {
+        scale: 80%;
+        gap: 1rem;
+    }
+    .wine-bottle {
+        margin-bottom: 2rem;
+    }
+    .recipe-how-to h2 {
+        margin-top: 2rem;
+    }
+    .recipe-how-to ul {
+        margin-top: 0rem;
+    }
+    .beverage {
+        margin-bottom: -2rem;
+    }
+}
+
